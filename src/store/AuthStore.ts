@@ -112,7 +112,7 @@ export const useAuthStore = create<AuthState>()(
         try {
           const { error } = await signIn.social({
             provider: "google",
-            callbackURL: `${window.location.origin}/auth/callback`,
+            callbackURL: `${import.meta.env.VITE_CLIENT_URL}/auth/callback`,
           });
           if (error) set({ error: error.message, isGoogleLoading: false });
         } catch (err) {
