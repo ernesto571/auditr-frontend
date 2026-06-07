@@ -75,7 +75,7 @@ export default function MenuSidebar ({ isOpen, onClose }: SidebarProps) {
                                             <s.icon size={15}  className={isActive ? "" : "gray-1 group-hover:text-[#f2f0e8]"}/>
                                             <h5 className="font-dm text-[0.9rem] truncate">{s.label}</h5> 
                                         </div>
-                                        { s.length && (<p className="text-[0.60rem] px-1.5 py-[1px] border gray-bord group-hover:border-[rgba(242,240,232,0.21)] " >{s.length} </p>) }
+                                        <p className="text-[0.60rem] px-1.5 py-[1px] border gray-bord group-hover:border-[rgba(242,240,232,0.21)] " >{s.length} </p>
                                     </>
                                 )}
                             </NavLink>

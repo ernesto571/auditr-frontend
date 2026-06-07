@@ -44,7 +44,22 @@ function App() {
         position="bottom-center"
         toastOptions={{
           duration: 4000,
-          style: { background: "#1f2937", color: "#fff", borderRadius: "10px" },
+          style: {
+            background: "#0a0a08",
+            color: "#f2f0e8",
+            borderRadius: "0px",
+            border: "1px solid #f2f0e8",
+            fontFamily: "JetBrains Mono, monospace",
+            fontSize: "0.78rem",
+            letterSpacing: "0.05em",
+            padding: "10px 16px",
+          },
+          success: {
+            iconTheme: { primary: "#1a5c35", secondary: "#f2f0e8" },
+          },
+          error: {
+            iconTheme: { primary: "#c0392b", secondary: "#f2f0e8" },
+          },
         }}
       />
     </>
