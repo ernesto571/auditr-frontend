@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* backgrounds */
+.black-bg {
+  background-color: #0a0a08;
+}
+
+.bg-cream {
+  background-color: #f2f0e8 ;
+}
+
+.bg-off {
+  background-color: #eae8e0;
+}
+
+.bg-orange {
+  background-color: #ff3e00 ;
+}
+
+.bg-orange:hover {
+  background-color: #e23d06;
+}
+
+/* text */
+.white {
+  color: #f2f0e8;
+}
+
+.black {
+  color: #0a0a08 ;
+}
+
+.black-2 {
+  color: #1e1e1c;
+}
+
+.gray-1{
+  color: #6b6960 ;
+}
+
+.gray-2{
+  color: #9b9890  ;
+}
+
+.gray-3{
+  color: rgba(242,240,232,.2);
+}
+
+.orange {
+  color: #ff3e00;
+}
+
+/* border */
+.black-bord {
+  border-color: #0a0a08;
+}
+
+.gray-bord {
+  border-color: #222121 ;
+}
+
+.main {
+  display: grid;
+}
+
+.sidebar {
+  display: none;
+}
+
+
+.content {
+  width: 100%;
+  background-color: #f2f0e8 ;
+  height: calc(100vh - 50px);
+  overflow: auto;
+  padding-left: 0.75rem /* 12px */;
+  padding-right: 0.75rem;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem 
+}
+
+@media (min-width: 700px) {
+
+  .content {
+    padding-left: 1.5rem /* 24px */;
+    padding-right: 1.5rem /* 24px */;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .main {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .sidebar {
+    display: flex;
+    grid-column: span 1 / span 1;
+  }
+
+
+}
